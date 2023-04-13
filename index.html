@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malama Hawaii【マラマハワイ】 ハワイ州レスポンシブルツーリズム情報サイト</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration:none
+        }
+
+
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 20px;
+
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+
+        }
+
+        .icon img{
+            padding: 0 20px;
+
+        }
+        .icon p{
+            font-size: 5px;
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        .logo img{
+            width: 120px;
+            height: 47px;
+        }
+
+        .nav{
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #6c6d6e;
+            border-bottom: 1px solid #6c6d6e;
+            padding: 15px;
+            align-items: center;
+            width: 100%;
+            top: 0;
+           left: 0;
+           z-index: 1;
+           background-color: #fff;
+
+
+        }
+
+        .nav-a a{
+            padding-left: 30px;
+            color: #f65936;
+        }
+        .nav-b{
+           line-height: 20px;
+            padding: 0 5px;
+
+        }
+        .nav-b ul li {
+        position: relative;
+        display: inline-block;
+        }
+        .nav-b ul li::after{
+            content: '';
+            height: 3px;
+            background: #008c8c;
+            left: 0;
+            bottom: -5px;
+            position: absolute;
+            transition: .3s;
+        }
+        .nav-b ul li:hover::after{
+            width: 100%;
+        }
+        .nav-b ul li a{
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+        }
+
+
+        .nav-c a{ 
+            color: #6c6d6e;
+        }
+        .nav-c{
+            margin-right: 10px;
+            display: flex;
+        }
+        .nav-c img{
+            padding-bottom: 5px;
+        }
+
+        .banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 70px 30px;
+            margin-bottom: -70px;
+            position: relative;
+        }
+        .banner-a{
+            padding: 0 50px;
+        }
+        .banner-b h2{
+            font-size: 150px;
+        }
+        .img{
+            display: flex;
+
+
+            }
+        .img-a img{
+                width: 943px;
+
+
+        }
+        .img-b{
+            position: relative;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+        .img-b img{           
+            padding-top: 80px;
+            padding-left: 50px;
+
+
+        }
+
+        .img-b1 img{
+            position: absolute;
+            margin-left: 34px;
+            margin-top: 34px;
+            
+        }
+        .img-b p{
+            writing-mode: vertical-rl;
+            justify-content: end;
+            align-items: end;
+            margin-left: auto;
+            margin-top: 100px;
+        }
+
+
+        .box-a{
+            display: flex;
+        }
+
+        .box-a .img img{
+            width: 550px;
+            height: 365px;
+            padding: 0 200px;
+            margin-top: -100px;
+        }
+
+.text h3 {
+padding-top: 96px;
+margin-bottom: 32px;
+font-size: 32px;    
+}
+
+.text p {
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+.text a{
+    color: #f65936 ;
+}
+.text-1{
+    position: relative;
+}
+a.text-1::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #f65936;
+    border-radius: 50%;
+    background-image: url(img/asset\ 93.png) ;
+    background-size: cover;
+
+}
+
+.box-b{
+    width: 1180px;
+    font-size: 60px;
+    margin: 0 200px;
+    padding: 50px;
+}
+
+.box-b span{
+    color: #f65936;
+}
+
+.about-text{
+text-align: center;
+}
+
+.about-img{
+    display: flex;
+    justify-content: center;
+    padding-left: 16px;
+}
+
+    .about-imgA img{
+        width: 401px;
+        height: 550px;
+        border-radius: 10px;
+        position: relative;
+    }
+    .about-imgB img{
+        width: 401px;
+        height: 550px;
+        margin-left: 16px;
+        border-radius: 10px;
+        position: relative;
+    }
+    .about-imgC img{
+        width: 401px;
+        height: 550px;
+        margin-left: 16px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .about-title{
+        position: absolute;
+        margin-top: -27%;
+        margin-left: 50px;
+        color: #fff;
+    }
+
+    .about-title a{
+     font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    padding: 10px 42px 10px 15px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 100px;
+    margin-top: 15px;
+    position: absolute;
+    }
+
+    .about-title a:before{
+        content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #f65936;
+    border-radius: 50%;
+    background-image: url(img/asset\ 93.png) ;
+    background-size: cover;
+    }
+
+.about-title p{
+    font-size: 14px;
+    position: absolute;
+    margin-top: 75%;
+}
+
+.about-title-text{
+    position: absolute;
+    margin-top: 380px;
+
+}
+
+.boder-title{
+    width: 1250px;
+    border-top: 1px solid #000;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+/* ======================================================= *
+
+/* ===============================4欄title=============================== */
+.box-content-title{
+    width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #666;
+    margin-top: 80px;
+    padding-top: 30px;
+}
+
+.box-content-title p{
+margin-top: auto;
+margin-right: auto;
+color: #666;
+padding: 40px 30px;
+
+}
+.box-content-title a{
+color: #f65936;
+position: relative;
+margin-right: 22px;
+
+}
+
+.box-content-title a::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #f65936;
+    border-radius: 50%;
+    background-image: url(img/asset\ 93.png) ;
+    background-size: cover;
+}
+
+/* ===============全部=============== */
+.box_content{
+    width: 1250px;
+    margin: auto;
+    display: flex;
+}
+
+.box_content_title{
+    font-size: 10px;
+}
+/* ===============A左半部=============== */
+.box_content_a1{
+    width: 610px;
+
+}
+.box_content_title{
+    display: flex;
+    padding: 5px;
+}
+
+
+.box_content_img img{
+    width: 610px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+
+.box_content_text_a{
+    display: flex;
+padding-top: 20px;
+}
+
+.box_content_text_a h5{
+    font-size: 24px;
+    
+}
+
+.box_content_text_a p{
+font-size: 10px;
+padding-left: 20px;
+line-height: 20px;
+}
+
+/* ===============A右半部=============== */
+.box_content_a2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box_content_title{
+    display: flex;
+}
+
+.box_content_img2 img{
+border-radius: 10px;
+width: 290px;
+height: 195px;
+}
+.box_content_text2 h5{
+padding: 10px 0;
+}
+
+
+.box_content_r1{
+    width: 290px;
+height: 336px;
+margin: 0 30px;
+}
+.box_content_r2{
+    width: 290px;
+height: 336px;
+}
+.box_content_r3{
+    width: 290px;
+height: 336px;
+    margin: 0 30px;
+}
+.box_content_r4{
+    width: 290px;
+height: 336px;
+}
+
+.box_content_r5{
+    width: 290px;
+height: 336px;
+    margin: 0 30px;
+    margin-top: 70px;
+}
+.box_content_r6{
+    width: 290px;
+height: 336px;
+margin-top: 70px;
+
+}
+/* ===============B左半部=============== */
+.box_content_b1{
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box_content_l1{
+   margin: 0 30px 0 0; 
+}
+
+.box_content_l3{
+    margin: 100px 30px 0 0; 
+}
+.box_content_l4{
+    margin-top: 100px;
+}
+
+
+.box_content_text_b{
+    width: 290px;
+}
+
+
+.box_content_text_b p{
+    padding: 10px 0;
+}
+
+
+
+/* ===============B右半部=============== */
+.box_content_b2{
+    width: 610px;
+
+
+}
+
+
+/* ============================================== */
+.bg{
+    width: 100%;
+    height: 671px;
+    background-image: url(img/asset\ 50.jpeg);
+
+}
+
+.bg_title{
+width: 1250px;
+color: #fff;
+margin: auto;
+padding-top: 40px;
+margin-top: -35%;
+
+
+}
+.bg_title_a{
+border-top:2px solid ;
+padding-bottom: 30px;
+padding-top: 15px;
+font-size: 20px;
+}
+
+.bg_title_b{
+    margin-top: 15%;
+}
+.bg_center{
+    font-size: 24px;
+margin-bottom: 20px;
+}
+
+
+
+.bgimg_imgs{
+    width: 1250px;
+    display: flex;
+    margin-top: 5%;
+}
+.bgimg_imgs img{
+    width: 468px;
+    height: 312px;
+    border-radius: 10px;
+
+}
+.bgimg_imgsl2{
+    position: absolute;    
+
+}
+
+.bgimg_imgsl2:hover{
+    color: #f65936;
+}
+
+.bgimg_imgsl2::before{
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-left: 100%;
+    margin-top: -20%;
+    left: 250px;
+}
+
+.bgimg_imgsl2::after{
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    background-image: url(img/asset\ 97.png);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-left: 100%;
+    margin-top: -5%;
+    left: 258px;   
+    background-size: cover;
+}
+.bgimg_imgsl p{
+margin-top: -30%;
+padding-left: 25px;
+
+}
+
+.bgimg_imgsr{
+    margin-left: 30px;
+}
+
+.introduce_img{
+    width: 100%;
+    justify-content: space-between;
+}
+.introduce_img img{
+width: 120px;
+height: 80px;
+
+}
+.introduce_img_top{
+    justify-content: space-between;
+    display: flex;
+    margin: 50px 0;
+}
+.introduce_img_bot{
+    justify-content: space-between;
+    display: flex;
+    margin: 50px 0;
+    padding-bottom: 100px;
+}
+
+.footer_bg{
+    width: 100%;
+    background: #303133;
+}
+
+.footer_bg img{
+    width: 100%;
+    height: 800px;
+
+}
+
+.footer_img{
+width: 100%;
+background: #303133;
+
+
+
+}
+.footer_img_center{
+    display: flex;
+    width: 1250px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+.footer_img_center img{
+width: 290px;
+height: 162px;
+
+}
+
+.footer_text{
+    background: #202124;
+}
+
+.footer_text1{
+    width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.footer_text1 a{
+    padding: 20px 0;
+    display: block;
+    color: #ffffffb3;
+    font-weight: bold;
+}
+
+.footer_buttom{
+    background: #202124;   
+}
+
+.footer_buttom_a{
+    padding-top: 80px;
+    border-top: 1px solid #fff;
+    width: 1250px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.footer_buttom_text{
+    color: #ffffffb3;
+}
+.footer_buttom_img{
+    padding-right: 80PX;
+}
+.footer_buttom_img img{
+    width: 300px;
+}
+.footer_buttom_imga img{
+    padding-left: 10px;
+}
+.footer_buttom_b{
+    color: #ffffffb3;
+    text-align: center;
+    margin: auto;
+    width: 1250px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">
+                <img src="img/asset 90.png" alt="">
+                <p>ハワイ州 <br>レスポンシブル・ツーリズム<br>情報サイト</p>
+            </div>
+            <div class="title">
+                <img src="img/asset 91.png" alt="">
+            </div>
+            <div class="logo">
+            <img src="img/asset 20.png" alt="">
+            </div>
+        </div>
+</div>
+<div class="nav">
+    <div class="nav-a">
+        <a href="">マラマハワイとは</a>
+    </div>
+    <div class="nav-b">
+        <ul>
+        <li><a href="#">旅行者にできること</a></li>
+        <li><a href="#">取組み紹介</a></li>
+        <li><a href="#">関連映像</a></li>
+        <li><a href="#">コミュニティ</a></li>
+        <li><a href="#">特集</a></li>
+        </ul>
+    </div>
+    <div class="nav-c">
+        <a href="">業界関係の方へ</a>
+        <img src="img/asset 21.png" alt="">
+    </div>
+</div>
+    <div class="container">
+<div class="banner">
+    <div class="banner-a">
+        <h2>
+            ハワイを想うことは、<br>ハワイの未来を創ること。
+        </h2>
+    </div>
+    <div class="banner-b">
+        <h2>
+            Re-Imagine<br>Hawai‘i
+        </h2>
+    </div>
+</div>
+    <div class="img">
+        <div class="img-a">
+            <img src="img/asset 24.jpeg" alt="">
+        </div>
+        <div class="img-b">
+            <div class="img-b1">
+                <img src="img/asset 92.png" alt="">
+            </div>
+            <img src="img/asset 23.png" alt="">
+            <p>
+                旅行者のみなさんだからできることがあります。
+                <br>ハワイが何十年後も、何百年後も、素晴らしい楽園であるよう
+                <br>旅の中で実践していく、新しい観光のカタチです。
+                <br>レスポンシブル・ツーリズムは、そんな思いやりの心を
+                <br>「マラマ = 思いやりの心」を持って接すること。
+                <br>山から海まで、ハワイに生きる美しい自然や文化に
+                <br>美しい楽園ハワイは、永遠ではありません。
+            </p>
+        </div>
+    </div>
+    <div class="box-a">
+        <div class="img">
+            <img src="img/asset 25.jpeg" alt="">
+        </div>
+        <div class="text">
+            <h3>美しいハワイを<br>
+                未来へとつなぐために<br>
+                わたしたちができること</h3>
+            <p>ハワイは世界の絶滅危惧種の宝庫と呼ばれるほど、貴重な生物がたくさ <br>
+                ん生息しています。ウミガメ、イルカ、クジラ、サンゴ礁。これらを守る<br>
+                ためにも、知ってもらいたいことやルールがあります。これからは旅行<br>
+                者にも、ハワイの島々の自然や文化を守り、現地住民が大切にする場所<br>
+                を敬い、美しいハワイを未来へつなげていく行動が求められます。<br>
+                「レスポンシブル・ツーリズム」一緒にはじめませんか。</p>
+             <a class="text-1" href="#">マラマハワイとは</a>   
+        </div>
+        
+    </div>
+<div class="box-b">
+<h3>What We Can Do to <br>
+   <span>Keep Hawai‘i Beautiful</span><br>
+    for the Future.</h3>
+</div>
+
+<div class="about-text">
+    <h3>ABOUT MĀLAMA HAWAI‘I</h3>
+</div>
+
+<div class="about-img">
+<div class="about-imgA">
+<img src="img/asset 94.jpeg" alt="">
+<div class="about-title">
+    <h2>責任ある旅行“レスポンシブ<br>
+        ル・ツーリズム”について</h2>
+        <a href="">詳しく見る</a>
+        <p>観光客もツーリズムを構成する要素であると捉
+            え、観光客が意識や行動に責任を持つことで、よ
+            り良い観光地形成を行っていこうという考え方で
+            す。</p>
+            <div class="about-title-text"><p>WHATIS“RESPONSIBLETOURISM”</p></div>
+</div>
+
+</div>
+<div class="about-imgB">
+    <img src="img/asset 95.jpeg" alt="">
+    <div class="about-title">
+        <h2>
+            ハワイ独自の取り組み“アロ<br>
+            ハプラスチャレンジ”につい
+            て
+        </h2>
+            <a href="">詳しく見る</a>
+            <p>SDG’sを基準にハワイ州が独自のゴールを設定し
+                た特別プログラムです。官民一体となり経済、社
+                会、環境の側面からを持続可能な社会を目指しま
+                す。</p>
+                <div class="about-title-text"><p>ABOUT“ALOHA+CHALLENGE”</p></div>
+    </div>
+    
+    </div>
+
+    <div class="about-imgC">
+        <img src="img/asset 96.jpeg" alt="">
+        <div class="about-title">
+            <h2>
+                ハワイ州観光局からのメッ<br>
+                セージ
+            </h2>
+                <a href="">詳しく見る</a>
+                <p>歴史的にも深い関係を持つ日本とハワイが、これ
+                    からも共に支え合い、高め合う良い関係が継続で
+                    きるようハワイ州観光局もサポートしていきま
+                    す。</p>
+                    <div class="about-title-text"><p>MESSAGEFROMHAWAI‘ITOURISMJAPAN</p></div>
+        </div>
+        
+        </div>
+</div>
+</div>
+
+<div class="boder-title">
+<h3>LATEST</h3>
+</div>
+
+<!-- =======================================5欄畫面左 開始======================================= -->
+<!-- =======================================1A======================================= -->
+<div class="box-content-title">
+    <h2>旅行者にできること</h2>
+    <p>What Travelers Can Do</p>
+    <a href="#">すべて見る</a>
+</div>
+
+
+
+<div class="box_content">
+
+<div class="box_content_a1">
+    <div class="box_content_title">
+<img src="img/asset 26.png" alt="">
+<p>エコ活動</p>
+    </div>
+    <div class="box_content_img">
+<img src="img/asset 27.jpeg" alt="">
+    </div>
+
+    <div class="box_content_text_a">
+    <div class="box_content_text_a1">
+<h5>【ハワイ島】海深914mか
+    ら湧き出る海洋深層水の
+    製塩所ツアーを体験！お
+    土産に最適な12種類の絶
+    品ハワイアンソルトも</h5>
+</div>
+    <div class="box_content_text_a2">
+<p>近年ハワイのエコツーリズムは益々注目され、現
+    地では生態系と土地を守りながら、いかにして観
+    光を両立させるかが課題となっています。表面的
+    だけではないハワイの奥深さを</p>
+<p>2022.06.14</p>
+
+</div>
+</div>
+</div>
+
+
+<!-- =======================================1B======================================= -->
+<div class="box_content_a2">
+    <div class="box_content_r1">
+    <div class="box_content_title">
+    <img src="img/asset 28.png" alt="">
+    <p>イベント</p>
+        </div>
+        <div class="box_content_img2">
+    <img src="img/asset 29.jpeg" alt="">
+        </div>
+        <div class="box_content_text2">
+    <h5>キング・カメハメハ・デー制定150周年記念イベント</h5>
+    <p>2022.06.08</p>
+        </div>
+    </div>
+
+    
+<!------------------------------------------- -->
+<div class="box_content_r2">
+<div class="box_content_title">
+<img src="img/asset 30.png" alt="">
+<p>その他</p>
+    </div>
+    <div class="box_content_img2">
+<img src="img/asset 31.jpeg" alt="">
+    </div>
+    <div class="box_content_text2">
+<h5>ユニクロ アラモアナ店〜UTme!限定デザイン「Together in Hawaii」シリーズでハワイフードバンクに寄付を〜</h5>
+<p>2022.01.28</p>
+    </div>
+</div>
+
+
+<!-- ----------------------------------------- -->
+        <div class="box_content_r3">
+            <div class="box_content_title">
+            <img src="img/asset 8.png" alt="">
+            <p>カルチャー</p>
+                </div>
+                <div class="box_content_img2">
+            <img src="img/asset 33.png" alt="">
+                </div>
+                <div class="box_content_text2">
+            <h5>「E Ulu A Paʻa」～ビショップ ミュージアム が年に一度のファンドレイジングを開催！～</h5>
+            <p>2021.08.12</p>
+                </div>
+            </div>
+
+
+<!-- ----------------------------------------- -->
+                <div class="box_content_r4">
+                    <div class="box_content_title">
+                    <img src="img/asset 34.png" alt="">
+                    <p>海</p>
+                        </div>
+                        <div class="box_content_img2">
+                    <img src="img/asset 35.jpeg" alt="">
+                        </div>
+                        <div class="box_content_text2">
+                    <h5>『世界海洋デー』とは～豊かな海の環境を守ろう～</h5>
+                    <p>2021.06.08</p>
+                        </div>
+                    </div>
+
+</div>
+</div>
+<!-- =======================================5欄畫面左 結束======================================= -->
+<!-- =======================================5欄畫面左 開始======================================= -->
+<!-- =======================================2A======================================= -->
+<div class="box-content-title">
+    <h2>企業の取組み</h2>
+    <p>Corporate Initiatives</p>
+    <a href="">すべて見る</a>
+</div>
+
+
+<div class="box_content">
+
+<div class="box_content_b1">
+<div class="box_content_l1">
+    <div class="box_content_img2">
+        <img src="img/asset 37.jpeg" alt="">
+            </div>
+            <div class="box_content_text_b">
+        <h5>廃棄された漁網を服に生まれ変わらせる！海を守ろうと活動する人々が主役のドキュメンタリーを作るプロジェクトをサポートしませんか？</h5>
+        <p>2022.06.14</p>
+            </div>
+</div>
+
+
+<!-- ----------------------------------------- -->
+<div class="box_content_l2">
+    <div class="box_content_img2">
+        <img src="img/asset 38.jpeg" alt="">
+            </div>
+            <div class="box_content_text_b">
+        <h5>第33回タートル・インディペンデンス・デイ開催</h5>
+        <p>2022.06.14</p>
+            </div>
+</div>
+
+
+<!-- ----------------------------------------- -->
+<div class="box_content_l3">
+    <div class="box_content_img2">
+        <img src="img/asset 39.jpeg" alt="">
+            </div>
+            <div class="box_content_text_b">
+        <h5>「シーアスパラガス」を生産している「オラカイ」のサステナブルな取り組み</h5>
+        <p>2022.06.14</p>
+            </div>
+</div>
+
+<!-- ----------------------------------------- -->
+<div class="box_content_l4">
+    <div class="box_content_img2">
+        <img src="img/asset 40.jpeg" alt="">
+            </div>
+            <div class="box_content_text_b">
+        <h5>【ザ・リッツ・カールトン・レジデンス ワイキキビーチ】オアフ島内最大運河、アラワイ運河の浄化プロジェクト「ゲンキ・アラワイ・プロジェクト」の協力パートナーに</h5>
+        <p>2022.06.14</p>
+            </div>
+</div>
+</div>
+
+<!-- =======================================2B======================================= -->
+<div class="box_content_b2">
+    <div class="box_content_banner">
+        <p>ジャルパック</p>
+    </div>
+    <div class="box_content_img">
+<img src="img/asset 36.jpeg" alt="">
+    </div>
+    <div class="box_content_text_a">
+        <div class="box_content_text_a1">
+            <h5>【チームJALハワイ】ビーチクリーンアップ活動で地元コミュニティに貢献！￼</h5>
+        </div>
+        <div class="box_content_text_a2">
+            <p>JALハワイ支店とJALPAK International Hawaiiで構成された“チームJALハワイ”は、ハワイ州観光局が提唱する「マラマハワイ～ハワイを思</p>
+            <p>2022.11.02</p>
+        </div>
+    </div>
+
+</div>
+</div>
+<!-- =======================================5欄畫面左 結束======================================= -->
+<!-- =======================================5欄畫面左 開始======================================= -->
+<!-- =======================================3A======================================= -->
+<div class="box-content-title">
+    <h2>ハワイ州観光局の取組み</h2>
+    <p>Hawai‘i Tourism Japan Initiatives</p>
+    <a href="#">すべて見る</a>
+</div>
+
+
+
+<div class="box_content">
+<div class="box_content_a1">
+    <div class="box_content_title">
+<p>ハワイ州観光局</p>
+    </div>
+    <div class="box_content_img">
+<img src="img/asset 22.jpeg" alt="">
+    </div>
+    <div class="box_content_text_a">
+        <div class="box_content_text_a1">
+<h5>マウイ郡、10月から海洋生物に影響与える日焼け止めの販売禁止を発表</h5>
+</div>
+<div class="box_content_text_a2">
+<p>2022年10月1日からマウイ郡ノンミネラルの日焼け止めの流通・販売禁止条例を施行 マウイ郡の条例5306号により、2022年10月1日からマウイ島、ラナイ島、</p>
+<p>2022.10.01</p>
+</div>
+    </div>
+</div>
+
+
+<!-- =======================================3B======================================= -->
+<div class="box_content_a2">
+    <div class="box_content_r1">
+    <div class="box_content_title">
+    <p>ハワイ州観光局</p>
+        </div>
+        <div class="box_content_img2">
+    <img src="img/asset 41.jpeg" alt="">
+        </div>
+        <div class="box_content_text2">
+    <h5>TBSミニ番組　マラマ〜新しいハワイ旅〜</h5>
+    <p>2022.10.11</p>
+        </div>
+    </div>
+
+
+<!-- ----------------------------------------- -->
+<div class="box_content_r2">
+<div class="box_content_title">
+<p>ハワイ州観光局</p>
+    </div>
+    <div class="box_content_img2">
+<img src="img/asset 42.png" alt="">
+    </div>
+    <div class="box_content_text2">
+<h5>ハワイ州観光局、マラマハワイリツイートキャンペーン第2弾を実施！～動画の楽曲を作詞された倉木麻衣さんのbillboard classics主催シンフォニックコンサート3公演を合計30組60名様にご招待！～</h5>
+<p>2022.06.06</p>
+    </div>
+</div>
+
+
+<!-- ----------------------------------------- -->
+        <div class="box_content_r5">
+            <div class="box_content_title">
+            <p>ハワイ州観光局</p>
+                </div>
+                <div class="box_content_img2">
+            <img src="img/asset 43.jpeg" alt="">
+                </div>
+                <div class="box_content_text2">
+            <h5>ハワイ州観光局、モデルのローラさんをマラマハワイ・アンバサダーに任命</h5>
+            <p>2022.04.22</p>
+                </div>
+            </div>
+
+
+<!-- ----------------------------------------- -->
+                <div class="box_content_r6">
+                    <div class="box_content_title">
+                    <p>ハワイ州観光局</p>
+                        </div>
+                        <div class="box_content_img2">
+                    <img src="img/asset 44.jpeg" alt="">
+                        </div>
+                        <div class="box_content_text2">
+                    <h5>ハワイ州観光局、マラマハワイ動画のリツイートキャンペーンを実施～動画のために書き下ろした『Sea wind』が収録された倉木麻衣さんサイン入りCDを10名様に贈呈！～</h5>
+                    <p>2021.12.14</p>
+                        </div>
+                    </div>
+<!-- ----------------------------------------- -->
+</div>
+</div>
+
+
+
+<!-- =======================================5欄畫面左 結束======================================= -->
+<!-- =======================================5欄畫面左 開始======================================= -->
+<!-- =======================================4A======================================= -->
+    <div class="box-content-title">
+        <h2>コミュニティの取り組み</h2>
+        <p>Corporate Initiatives</p>
+        <a href="">すべて見る</a>
+    </div>
+
+    <div class="box_content">
+    
+        <div class="box_content_b1">
+            <div class="box_content_l1">
+                <div class="box_content_title">
+                    <p>サスティナブル・コーストラインズ・ハワイ</p>
+                        </div>
+                <div class="box_content_img2">
+            <img src="img/asset 46.jpeg" alt="">
+                </div>
+                <div class="box_content_text_b">
+            <h5>サスティナブル・コーストラインズ・ハワイ、第二回クリーンアップイベント「The Kaimukī Cleanup Festival 」に参加</h5>
+            <p>2022.06.20</p>
+                </div>
+    </div>
+    <!-- ----------------------------------------- -->
+    <div class="box_content_l2">
+        <div class="box_content_img2">
+            <img src="img/asset 47.jpeg" alt="">
+                </div>
+                <div class="box_content_text_b">
+            <h5>地上最古の海洋生物の一種であるウミガメ　彼らを絶滅の危機から保護する「マラマ イ ナ ホヌ」</h5>
+            <p>2022.05.26</p>
+                </div>
+    </div>
+    <!-- ----------------------------------------- -->
+    <div class="box_content_l3">
+        <div class="box_content_title">
+            <p>アウトリガー・ホテルズ＆リゾーツ</p>
+                </div>
+        <div class="box_content_img2">
+            <img src="img/asset 48.jpeg" alt="">
+                </div>
+                <div class="box_content_text_b">
+            <h5>サステナブルなアートとファッションをテーマにしたイベント「THINK GLOBALLY, ACT LOCALLY」を開催</h5>
+            <p>2022.04.23</p>
+                </div>
+    </div>
+    <!-- ----------------------------------------- -->
+    <div class="box_content_l4">
+        <div class="box_content_title">
+            <p>クプ・ハワイ（KUPU Hawaii）</p>
+                </div>
+        <div class="box_content_img2">
+            <img src="img/asset 49.jpeg" alt="">
+                </div>
+                <div class="box_content_text_b">
+            <h5>次世代を支援するクプ・ハワイ、Hoʻokupu Centerの取り組み</h5>
+            <p>2021.06.23</p>
+                </div>
+    </div>
+    </div>
+    
+<!-- =======================================4B======================================= -->   
+    <div class="box_content_b2">
+        <div class="box_content_img">
+    <img src="img/asset 45.jpeg" alt="">
+        </div>
+        <div class="box_content_text_a">
+            <div class="box_content_text_a1">
+                <h5>Zero Waste Oahu (ゼロウェイストオアフ) の取り組み</h5>
+            </div>
+            <div class="box_content_text_a2">
+                <p>Zero Waste Oahuは現在の生産方法、購買システム、廃棄物管理システムに積極的に介入するシステムを通じて、バランスのとれた消費文化と廃棄物の少ない未来</p>
+                <p>2022.07.20</p>
+            </div>
+        </div>
+    
+    </div>
+    </div>
+
+</div>
+<!-- =======================================5欄畫面左 結束======================================= -->
+<div class="bg">
+
+</div>
+
+
+
+<div class="bg_title">
+    <div class="bg_title_a">
+        <h4>FEATURED</h4>
+    </div>
+    <div class="bg_title_b">
+        <div class="bg_center">
+            <h3>注目の特集</h3>
+        </div>
+        <div class="bg_center_text">
+            <p>ハワイ特有の文化や習慣を知ってもらい、<br>
+                より一層ハワイをより楽しむための情報をお届けします。</p>
+        </div>
+    </div>
+     
+    <div class="bgimg_imgs">
+
+        <div class="bgimg_imgsl">
+            <img src="img/asset 51.jpeg" alt="">
+            <div class="bgimg_imgsl2">
+            <p>ことばで知るハワイ</p>
+        </div>
+        </div>
+        
+        <div class="bgimg_imgsr">
+            <img src="img/asset 52.jpeg" alt="">
+        </div>
+</div>
+</div>
+
+<div class="boder-title">
+    <h3>COMMUNITIES & PARTNERS</h3>
+    </div>
+<div class="box-content-title">
+    <h2>コミュニティ紹介</h2>
+    <a href="#">すべて見る</a>
+</div>
+
+<div class="introduce_img">
+    <div class="introduce_img_top">
+        <div class="introduce_img_top1">
+        <img src="img/asset 53.jpeg" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div class="introduce_img_top2">
+        <img src="img/asset 54.png" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+        <div class="introduce_img_top3">
+        <img src="img/asset 55.jpeg" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+        <div class="introduce_img_top4">
+        <img src="img/asset 56.png" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+        <div class="introduce_img_top5">
+        <img src="img/asset 57.png" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+        <div class="introduce_img_top6">
+        <img src="img/asset 58.png" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    </div>
+
+
+    <div class="introduce_img_bot">
+        <div class="introduce_img_bot1">
+        <img src="img/asset 59.jpeg" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+        <div class="introduce_img_bot2">
+        <img src="img/asset 60.png" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+        <div class="introduce_img_bot3">
+        <img src="img/asset 61.png" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+        <div class="introduce_img_bot4">
+        <img src="img/asset 62.png" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+        <div class="introduce_img_bot5">
+        <img src="img/asset 63.jpeg" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+        <div class="introduce_img_bot6">
+        <img src="img/asset 64.png" alt="">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    </div>
+</div>
+
+<div class="boder-title">
+    <h3>MOVIES</h3>
+    </div>
+<div class="box-content-title">
+    <h2>関連映像</h2>
+    <a href="#">すべて見る</a>
+</div>
+
+<!-- =======================================3A======================================= -->
+<div class="box_content">
+<div class="box_content_a1">
+    <div class="box_content_title">
+<p>インタビュー 文化保護 自然環境</p>
+    </div>
+    <div class="box_content_img">
+<img src="img/asset 69.png" alt="">
+    </div>
+    <div class="box_content_text_a">
+        <div class="box_content_text_a1">
+<h5>ハワイアンの価値観を学ぶ～先祖から伝わる食文化～</h5>
+</div>
+<div class="box_content_text_a2">
+<p>オアフ島在住のネイティブハワイアンシェフ、ケアロハ・ドミンゴ氏によるインタビュービデオ。ハワイアンの主食であったタロイモにスポットライトを当て、ハワイアン先祖の</p>
+<p>2022.08.05</p>
+</div>
+    </div>
+</div>
+
+
+<!-- =======================================3B======================================= -->
+<div class="box_content_a2">
+    <div class="box_content_r1">
+    <div class="box_content_title">
+    <p>インタビュー プロモーション 文化保護</p>
+        </div>
+        <div class="box_content_img2">
+    <img src="img/asset 70.png" alt="">
+        </div>
+        <div class="box_content_text2">
+    <h5>マラマ・カウアイ～カウアイ・ミュージアム</h5>
+    <p>2022.07.29</p>
+        </div>
+    </div>
+
+
+<!-- ----------------------------------------- -->
+<div class="box_content_r2">
+<div class="box_content_title">
+<p>文化保護 自然環境</p>
+    </div>
+    <div class="box_content_img2">
+<img src="img/asset 71.png" alt="">
+    </div>
+    <div class="box_content_text2">
+<h5>アフプアア～マウカ（山）からマカイ（海）へ～</h5>
+<p>2022.01.28</p>
+    </div>
+</div>
+
+
+<!-- ----------------------------------------- -->
+        <div class="box_content_r5">
+            <div class="box_content_title">
+            <p>プロモーション</p>
+                </div>
+                <div class="box_content_img2">
+            <img src="img/asset 72.jpeg" alt="">
+                </div>
+                <div class="box_content_text2">
+            <h5>マラマハワイ～この星のための合言葉～</h5>
+            <p>2021.11.16</p>
+                </div>
+            </div>
+
+
+<!-- ----------------------------------------- -->
+                <div class="box_content_r6">
+                    <div class="box_content_title">
+                    <p>プロモーション 自然環境</p>
+                        </div>
+                        <div class="box_content_img2">
+                    <img src="img/asset 73.jpeg" alt="">
+                        </div>
+                        <div class="box_content_text2">
+                    <h5>マラマハワイ～ハワイの持続可能な農業を目指して～</h5>
+                    <p>2021.09.06</p>
+                        </div>
+                    </div>
+<!-- ----------------------------------------- -->
+</div>
+</div>
+
+
+
+<!-- =======================================5欄畫面左 結束======================================= -->
+<div class="footer_bg">
+    <img src="img/asset 74.jpeg" alt="">
+</div>
+
+<div class="footer_img">
+    <div class="footer_img_center">
+        <img src="img/asset 76.png" alt="">
+        <img src="img/asset 77.png" alt="">
+        <img src="img/asset 78.png" alt="">
+        <img src="img/asset 78.png" alt="">
+    </div>
+</div>
+
+<div class="footer_text">
+    <div class="footer_text1">
+        <div class="footer_text_a">
+<a href="#">トップ<br> TOP</a>
+<a href="#">マラマハワイとは<br>About Mālama Hawaiʻi</a>
+        </div>
+        <div class="footer_text_b">
+            <a href="#">旅行者にできること<br>WHAT TRAVELERS CAN DO</a>
+            <a href="#">取組み紹介<br>INITIATIVES</a>
+            <a href="#">関連映像<br>MOVIES<br></a>
+        </div>
+        <div class="footer_text_c">
+            <a href="#">コミュニティ紹介<br>COMMUNITIES</a>
+            <a href="#">特集<br>FEATURED</a>
+        </div>
+        <div class="footer_text_d">
+            <a href="">業界関係の方へ<img src="img/asset 21.png" alt=""></a>
+            <a href="">お問い合わせ<img src="img/asset 21.png" alt=""></a>
+            <a href="">利用規約<img src="img/asset 21.png" alt=""></a>
+            <a href="">プライバシーポリシー<img src="img/asset 21.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<div class="footer_buttom">
+    <div class="footer_buttom_a">
+        <div class="footer_buttom_text">
+            <p>ハワイ州 <br>
+                レスポンシブル・ツーリズム<br>
+                情報サイト</p>
+        </div>
+        <div class="footer_buttom_img">
+            <a href="#"><img src="img/asset 79.png" alt=""></a>
+        </div>
+        <div class="footer_buttom_imga">
+            <a href="#"><img src="img/asset 80.png" alt=""></a>
+            <a href="#"><img src="img/asset 81.png" alt=""></a>
+            <a href="#"><img src="img/asset 82.png" alt=""></a>
+            <a href="#"><img src="img/asset 83.png" alt=""></a>
+            <a href="#"><img src="img/asset 84.png" alt=""></a>
+        </div>
+    </div>
+<div class="footer_buttom_b">
+    <p>©Hawai‘i Tourism Japan All rights reserved.</p>
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
